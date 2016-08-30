@@ -8,7 +8,7 @@ import 'package:polymer_ajax_backed_model_behavior/polymer_ajax_backed_model_beh
 import '../model/country.dart';
 
 @PolymerRegister('country-detail')
-class CountryDetail extends PolymerElement with PolymerMixin, PolymerBase, JsProxy, AjaxBackedModelBehavior {
+class CountryDetail extends PolymerElement with AjaxBackedModelBehavior {
 
   CountryDetail.created() : super.created();
 

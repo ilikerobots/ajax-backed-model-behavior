@@ -8,40 +8,36 @@ A Dart Polymer behavior that provides a Polymer element with a model derived fro
 
 ## Usage
 
-First, create a model class implementing AjaxBackedModel.  The model must 
-implement the method ```setFromJsonString```.  
+First, make your model class implement AjaxBackedModel and its abstract
+method ```setFromJsonString```. This method handles deserialization of
+JSON into an existing instance of the model.  
 
 Next, create a Polymer element that will utilize the model, by 
 implementing AjaxBackedModelBehavior.  The element must implement 
-```get modelInstance``` which returns an instance of the desired model 
+```get modelInstance``` which returns an instance of the model class
 above.  
 
-The element is now ready to use.   For example:
+With the above wiring, the polymer element gains additional attributes
+which simplify its use.  For example:
 
-```
+```html
 <my-element auto-load ajax-url="http://mydomain/api/data.json"></my-element>
 ```
 
 With the usage above, the json returned from ```data.json``` will be
 converted to the model object and assigned to the "model" attribute
-on element when the element is readied.  Thus the element's html can 
+when the element is readied.  The element's html can 
 reference model data as ```[[model.attribute]]```.
 
-If ```auto-load``` is true, then any changes to ```ajax-url``` will 
+## Attributes
+
+ * ```ajax-url```: The url to the data source, e.g. a rest endpoint or data
+file 
+ *  ```auto-load```: if true, then any changes to ```ajax-url``` will 
 result in the model being updated with the result of a new ajax 
 request.
-
-In situations where it is not necessary to look up the model via ajax,
-the model may set directly, e.g.
-```
-<my-element model="[[item]]"></my-element>
-```
-
-Ajax loading may be deferred by setting ```ajax url``` but
-leaving ```auto-load``` false.  Later, ```loadModelFromAjax```  may be
-called whenever desired.  If  ```auto-load``` is set later set to true,
-then normal automatic loading will resume.
-
+ *  ```model```: may be used to set the model directly for situations 
+ where it is not necessary to look up the model via ajax
 
 ## Events
 
@@ -52,23 +48,22 @@ AjaxBackedModelBehavior may fire the following three events
  * ajax-model-error, detail: Map containing 'status' and  'statusText'
 
 
-
 ## Future improvements
 
-I would like to provide a @AjaxModel annotation on the model class,
-and let a transformer automatically provide the wiring c:w
-ode.
+I would like to provide a @AjaxModel annotation, and create a 
+transformer automatically provide the wiring described above.
 
 
 ## Example
 
 
+An full example can be found in the example directory and run 
+via ``pub serve example`` or [viewed online](https://ilikerobots.github.io/ajax-backed-model-behavior/example/)
 
-```
-import 'package:polymer/polymer.dart';
-import 'package:polymer_ajax_backed_model_behavior/ajax_backed_model.dart';
-import 'dart:convert';
+The following code illustrates a simple example of a model and a custom
+Polymer element using it an ajax backed model.
 
+```dart
 class Country extends Object with AjaxBackedModel, JsProxy {
 
   @reflectable int id;
@@ -84,15 +79,11 @@ class Country extends Object with AjaxBackedModel, JsProxy {
 ```
 
 
-```
+```dart
 @HtmlImport('country_detail.html')
-import 'package:polymer/polymer.dart';
-import 'package:web_components/web_components.dart';
-import 'package:polymer_ajax_backed_model_behavior/polymer_ajax_backed_model_behavior.dart';
-import '../model/country.dart';
 
 @PolymerRegister('country-detail')
-class CountryDetail extends PolymerElement with PolymerMixin, PolymerBase, JsProxy, AjaxBackedModelBehavior {
+class CountryDetail extends PolymerElement with AjaxBackedModelBehavior {
 
   CountryDetail.created() : super.created();
 
@@ -103,7 +94,6 @@ class CountryDetail extends PolymerElement with PolymerMixin, PolymerBase, JsPro
 
 
 
-An example can be found in the example directory and run via ``pub serve example``.
 
 
 

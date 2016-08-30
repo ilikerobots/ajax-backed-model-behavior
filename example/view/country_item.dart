@@ -12,7 +12,7 @@ import 'package:polymer_ajax_backed_model_behavior/polymer_ajax_backed_model_beh
 import '../model/country.dart';
 
 @PolymerRegister('country-item')
-class CountryItem extends PolymerElement with PaperItemBehavior, PolymerMixin, PolymerBase, JsProxy, AjaxBackedModelBehavior {
+class CountryItem extends PolymerElement with PaperItemBehavior, AjaxBackedModelBehavior {
 
   CountryItem.created() : super.created();
 

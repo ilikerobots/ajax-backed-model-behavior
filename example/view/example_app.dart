@@ -12,7 +12,7 @@ import 'package:polymer_interop/polymer_interop.dart';
 import 'country_chart.dart';
 
 @PolymerRegister('example-app')
-class ExampleApp extends PolymerElement with PolymerMixin, PolymerBase, JsProxy {
+class ExampleApp extends PolymerElement with PolymerMixin {
   @property
   int currentUrlIndex = 0;
 

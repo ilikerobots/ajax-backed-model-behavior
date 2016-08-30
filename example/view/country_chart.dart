@@ -17,7 +17,7 @@ import 'country_detail.dart';
 
 
 @PolymerRegister('country-chart')
-class CountryChart extends PolymerElement with PolymerMixin, PolymerBase, JsProxy, AjaxBackedModelBehavior {
+class CountryChart extends PolymerElement with PolymerMixin, AjaxBackedModelBehavior {
 
   static const HEADER_ROW = const ["x", "y", const {"role": "annotation"}, const {"role": "annotationText"}];
   static const ERROR_ROW = const [0, 0, "Error", "err"];
