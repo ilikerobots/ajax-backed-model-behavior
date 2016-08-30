@@ -25,9 +25,9 @@ which simplify its use.  For example:
 ```
 
 With the usage above, the json returned from ```data.json``` will be
-converted to the model object and assigned to the "model" attribute
+converted to the model object and assigned to the "ajaxModel" attribute
 when the element is readied.  The element's html can 
-reference model data as ```[[model.attribute]]```.
+reference model data as ```[[ajaxModel.myField]]```.
 
 ## Attributes
 
@@ -36,7 +36,7 @@ file
  *  ```auto-load```: if true, then any changes to ```ajax-url``` will 
 result in the model being updated with the result of a new ajax 
 request.
- *  ```model```: may be used to set the model directly for situations 
+ *  ```ajax-model```: may be used to set the model directly for situations 
  where it is not necessary to look up the model via ajax
 
 ## Events
@@ -47,6 +47,11 @@ AjaxBackedModelBehavior may fire the following three events
  * ajax-model-response, detail: AjaxBackedModel 
  * ajax-model-error, detail: Map containing 'status' and  'statusText'
 
+## Changing the model attribute name
+
+If desired, the model attribute name can be changed from the default 
+("ajaxModel").  Override the method ```get modelName```.   See [example](https://github.com/ilikerobots/ajax-backed-model-behavior/blob/master/example/view/country_detail.dart).
+
 
 ## Future improvements
 
@@ -56,9 +61,6 @@ transformer automatically provide the wiring described above.
 
 ## Example
 
-
-An full example can be found in the example directory and run 
-via ``pub serve example`` or [viewed online](https://ilikerobots.github.io/ajax-backed-model-behavior/example/)
 
 The following code illustrates a simple example of a model and a custom
 Polymer element using it an ajax backed model.
@@ -93,8 +95,8 @@ class CountryDetail extends PolymerElement with AjaxBackedModelBehavior {
 ```
 
 
-
-
+An full example can be found in the [example directory](https://github.com/ilikerobots/ajax-backed-model-behavior/tree/master/example) and run 
+via ``pub serve example`` or [viewed online](https://ilikerobots.github.io/ajax-backed-model-behavior/example/)
 
 
 ## Testing
