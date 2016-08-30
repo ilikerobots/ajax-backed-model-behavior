@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "country": "Mauritania",
+    "y": -10.303,
+    "x": 26.8214
+  },
+  {
+    "id": 1,
+    "country": "Sao Tome and Principe",
+    "y": -81.8875,
+    "x": 19.3357
+  },
+  {
+    "id": 2,
+    "country": "Russian Federation",
+    "y": 43.1662,
+    "x": 83.4062
+  },
+  {
+    "id": 3,
+    "country": "Netherlands",
+    "y": -102.1906,
+    "x": 47.9597
+  },
+  {
+    "id": 4,
+    "country": "Congo",
+    "y": -141.5575,
+    "x": -4.5431
+  },
+  {
+    "id": 5,
+    "country": "Tuvalu",
+    "y": 83.6294,
+    "x": -28.4952
+  },
+  {
+    "id": 6,
+    "country": "Senegal",
+    "y": 62.232,
+    "x": -16.2734
+  },
+  {
+    "id": 7,
+    "country": "Sweden",
+    "y": -84.3577,
+    "x": -66.4558
+  },
+  {
+    "id": 8,
+    "country": "Zambia",
+    "y": 26.454,
+    "x": 24.9418
+  },
+  {
+    "id": 9,
+    "country": "Kiribati",
+    "y": 121.0408,
+    "x": -51.3196
+  },
+  {
+    "id": 10,
+    "country": "Sri Lanka",
+    "y": -71.937,
+    "x": -60.3587
+  },
+  {
+    "id": 11,
+    "country": "Saint Kitts and Nevis",
+    "y": -113.3423,
+    "x": -77.6266
+  },
+  {
+    "id": 12,
+    "country": "French Guiana",
+    "y": -32.3151,
+    "x": -41.7974
+  },
+  {
+    "id": 13,
+    "country": "Nigeria",
+    "y": -71.6588,
+    "x": -44.289
+  },
+  {
+    "id": 14,
+    "country": "Maldives",
+    "y": -50.4173,
+    "x": -83.7314
+  },
+  {
+    "id": 15,
+    "country": "Kyrgyzstan",
+    "y": 135.8053,
+    "x": -56.5974
+  },
+  {
+    "id": 16,
+    "country": "Malta",
+    "y": 100.095,
+    "x": 24.3031
+  },
+  {
+    "id": 17,
+    "country": "Togo",
+    "y": -140.7483,
+    "x": -67.2357
+  },
+  {
+    "id": 18,
+    "country": "Bosnia and Herzegovina",
+    "y": 69.0423,
+    "x": -48.294
+  },
+  {
+    "id": 19,
+    "country": "Solomon Islands",
+    "y": 55.3781,
+    "x": 58.0985
+  }
+]

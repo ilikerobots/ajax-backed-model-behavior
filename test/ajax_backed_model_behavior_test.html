@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>test for dart polymer ajax-backed-model-behavior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="packages/web_components/webcomponents-lite.js"></script>
+    <script src="packages/polymer_interop/src/js/polymer.js"></script>
+    <link rel="x-dart-test" href="ajax_backed_model_behavior_test.dart">
+    <script src="packages/test/dart.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+<body>
+
+<template id="testview_empty">
+  <test-view></test-view>
+</template>
+
+<template id="testview_autoload">
+  <test-view auto-load ajax-url="data/country_0.json"></test-view>
+</template>
+
+<template id="testview_noautoload">
+  <test-view ajax-url="data/country_0.json"></test-view>
+</template>
+
+</body>
+</html>

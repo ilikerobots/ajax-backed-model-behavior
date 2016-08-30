@@ -1,0 +1,71 @@
+<!--
+  Copyright (c) 2016, Mike Hoolehan. All rights reserved.
+-->
+
+<dom-module id="example-app">
+
+  <template>
+
+    <style is="custom-style">
+
+
+      :host {
+        background-color: #fff;
+        display: block;
+        padding: 10px;
+
+        --paper-tab-ink: #ad004c;
+        font-family: 'Roboto', 'Noto', sans-serif;
+
+        --paper-tab-content: {
+          text-transform: uppercase;
+          font-weight: bold;
+        };
+
+      }
+
+      #error_toast {
+        background: #F00;
+      }
+
+      paper-tabs {
+        margin-top: 1em;
+        background: #ececec;
+      }
+
+      a.button {
+        color: #333;
+        float: right;
+      }
+
+    </style>
+
+    <div>
+      <h3>Dart Polymer ajax-backed-model-behavior demo</h3>
+      <a class="button" href="https://github.com/ilikerobots/dart-polymer-ajax-backed-model-behavior" tabindex="-1">View
+        on Github
+      </a>
+    </div>
+    <br/>
+
+    <paper-toast id="loading_toast" text$="Loaded [[currentAjaxUrl]] in [[lastElapsedTime]]ms"></paper-toast>
+    <paper-toast id="error_toast" text$="[[errorMessage]]"></paper-toast>
+
+    <paper-tabs no-bar>
+      <paper-tab on-tap="skipChart" data-increment="-1">Previous Chart</paper-tab>
+      <paper-tab on-tap="skipChart" data-increment="1">Next Chart</paper-tab>
+    </paper-tabs>
+
+    <country-chart auto-load ajax-url="[[currentAjaxUrl]]"
+                   on-ajax-model-request="startRequest"
+                   on-ajax-model-response="updateChart"
+                   on-ajax-model-error="showError"
+    >
+    </country-chart>
+
+    <p>This simple example illustrates a chart element that is populated by an ajax-provided model.  Additionally,
+    clicking an item loads a "detail" view also backed by an ajax-provided model. The AjaxBackedModelBehavior
+    simplifies much of the wiring to perform the ajax request and set the model.</p>
+
+  </template>
+</dom-module>
