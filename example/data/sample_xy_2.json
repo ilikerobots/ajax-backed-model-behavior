@@ -1,0 +1,110 @@
+[
+  {
+    "id": 200,
+    "country": "Cambodia",
+    "y": 80.0155,
+    "x": 76.4707
+  },
+  {
+    "id": 201,
+    "country": "Kuwait",
+    "y": 130.9083,
+    "x": -70.9018
+  },
+  {
+    "id": 202,
+    "country": "Armenia",
+    "y": -171.1341,
+    "x": -57.4547
+  },
+  {
+    "id": 203,
+    "country": "Tunisia",
+    "y": 82.2237,
+    "x": -77.0173
+  },
+  {
+    "id": 204,
+    "country": "Guinea",
+    "y": -24.637,
+    "x": 81.9947
+  },
+  {
+    "id": 205,
+    "country": "Ecuador",
+    "y": -179.3222,
+    "x": 83.272
+  },
+  {
+    "id": 206,
+    "country": "Switzerland",
+    "y": -126.8088,
+    "x": 11.4731
+  },
+  {
+    "id": 207,
+    "country": "Swaziland",
+    "y": -114.2754,
+    "x": -88.461
+  },
+  {
+    "id": 208,
+    "country": "Lithuania",
+    "y": -0.1801,
+    "x": 63.1732
+  },
+  {
+    "id": 209,
+    "country": "San Marino",
+    "y": 100.3899,
+    "x": 6.4956
+  },
+  {
+    "id": 210,
+    "country": "South Africa",
+    "y": -107.4129,
+    "x": -62.032
+  },
+  {
+    "id": 211,
+    "country": "Ethiopia",
+    "y": 147.9738,
+    "x": -14.0903
+  },
+  {
+    "id": 212,
+    "country": "Kiribati",
+    "y": -71.049,
+    "x": -36.7764
+  },
+  {
+    "id": 213,
+    "country": "Reunion",
+    "y": -50.5505,
+    "x": 89.2661
+  },
+  {
+    "id": 214,
+    "country": "Yugoslavia",
+    "y": 116.4409,
+    "x": 47.1202
+  },
+  {
+    "id": 215,
+    "country": "Antigua and Barbuda",
+    "y": 141.0796,
+    "x": 79.488
+  },
+  {
+    "id": 216,
+    "country": "Sweden",
+    "y": -158.1104,
+    "x": 3.0096
+  },
+  {
+    "id": 217,
+    "country": "Japan",
+    "y": 10.5956,
+    "x": 86.0946
+  }
+]

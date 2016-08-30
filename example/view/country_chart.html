@@ -1,0 +1,69 @@
+<!--
+  Copyright (c) 2016, Mike Hoolehan. All rights reserved.
+-->
+
+<dom-module id="country-chart">
+
+  <template>
+
+    <style is="custom-style">
+
+
+      google-chart {
+        width: 400px;
+        height: 400px;
+      }
+
+      paper-listbox {
+        width: 200px;
+        background: #ad004c;
+        color: white;
+        height: 400px;
+        overflow-y: auto;
+      }
+
+
+
+      country-detail {
+        float:right;
+      }
+
+      #chart_container {
+        @apply(--layout-horizontal);
+      }
+
+      #chart_container > div {
+        /*@apply(--layout-horizontal);*/
+      }
+
+    </style>
+
+    <div id="chart_container">
+
+      <!-- Show detailed info about country by fetching json for id -->
+
+      <div>
+        <paper-listbox>
+          <template is="dom-repeat" items="[[ajaxModel.list]]">
+            <!-- set the model directly without ajax since it's already present in the current model.list -->
+            <!--<paper-item on-tap="selectCountry">-->
+              <country-item  country-detail-model="[[item]]" on-tap="selectCountry"></country-item>
+            <!--</paper-item>-->
+          </template>
+        </paper-listbox>
+      </div>
+      <div>
+        <google-chart type="scatter"
+                      options='[[options]]'
+                      data='[[data]]'
+                      on-google-chart-select="chartSelect">
+        </google-chart>
+        <country-detail auto-load ajax-url="data/detail/country_[[selectedCountry]].json"></country-detail>
+      </div>
+
+
+    </div>
+
+
+  </template>
+</dom-module>

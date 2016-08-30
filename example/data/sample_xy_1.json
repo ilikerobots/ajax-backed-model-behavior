@@ -1,0 +1,62 @@
+[
+  {
+    "id": 100,
+    "country": "Kuwait",
+    "y": -23.7916,
+    "x": -62.4921
+  },
+  {
+    "id": 101,
+    "country": "Cayman Islands",
+    "y": -91.4675,
+    "x": 31.9829
+  },
+  {
+    "id": 102,
+    "country": "Iceland",
+    "y": 130.0822,
+    "x": 38.549
+  },
+  {
+    "id": 103,
+    "country": "Turkey",
+    "y": 125.6183,
+    "x": -45.3691
+  },
+  {
+    "id": 104,
+    "country": "Czech Republic",
+    "y": 21.6153,
+    "x": 38.3389
+  },
+  {
+    "id": 105,
+    "country": "Bosnia and Herzegovina",
+    "y": 42.5156,
+    "x": 16.5303
+  },
+  {
+    "id": 106,
+    "country": "Virgin Islands (US)",
+    "y": -22.3685,
+    "x": -3.0939
+  },
+  {
+    "id": 107,
+    "country": "Dominican Republic",
+    "y": -124.7303,
+    "x": 87.3137
+  },
+  {
+    "id": 108,
+    "country": "Comoros",
+    "y": -75.4845,
+    "x": 3.8606
+  },
+  {
+    "id": 109,
+    "country": "Solomon Islands",
+    "y": -86.1157,
+    "x": -81.3593
+  }
+]

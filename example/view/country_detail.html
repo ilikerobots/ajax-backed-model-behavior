@@ -1,0 +1,16 @@
+<!--
+  Copyright (c) 2016, Mike Hoolehan. All rights reserved.
+-->
+
+<dom-module id="country-detail">
+
+  <template>
+
+    <style>
+
+    </style>
+    <template is="dom-if" if="[[ajaxModel.name]]">
+      [[ajaxModel.name]]: [[ajaxModel.x]] / [[ajaxModel.y]]
+    </template>
+  </template>
+</dom-module>
