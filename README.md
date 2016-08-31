@@ -13,9 +13,8 @@ method ```setFromJsonString```. This method handles deserialization of
 JSON into an existing instance of the model.  
 
 Next, create a Polymer element that will utilize the model, by 
-implementing AjaxBackedModelBehavior.  The element must implement 
-```get modelInstance``` which returns an instance of the model class
-above.  
+implementing AjaxBackedModelBehavior.  The element must implement ```get modelInstance``` 
+which returns an instance of the model class above.  
 
 With the above wiring, the polymer element gains additional attributes
 which simplify its use.  For example:

@@ -1,5 +1,5 @@
 name: polymer_ajax_backed_model_behavior
-version: 0.0.1
+version: 0.0.2
 description: A native Dart Polymer behavior providing wiring for elements with an ajax provided model.
 author: Mike Hoolehan <mike@hoolehan.com>
 homepage: https://github.com/ilikerobots/ajax-backed-model-behavior
