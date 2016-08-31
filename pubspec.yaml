@@ -7,7 +7,7 @@ homepage: https://github.com/ilikerobots/ajax-backed-model-behavior
 environment:
   sdk: '>=1.13.0 <2.0.0'
 dependencies:
-  polymer: 1.0.0-rc.18
+  polymer: ^1.0.0-rc.16
   dart_to_js_script_rewriter: ^1.0.1
 dev_dependencies:
   polymer_elements: ^1.0.0-rc.8
