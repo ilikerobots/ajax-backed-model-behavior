@@ -105,7 +105,7 @@ To run on dartium (default): ```pub run test```  As usual, tests can be run on o
 
 To run tests as javascript, the pub serve and test execution must be performed separately. Run ```pub serve test --port=8080``` from one terminal and ```pub run test -pchrome --pub-serve=8080``` from a second.
 
-Note that tests are specifically blocked from running on Firefox currently in order to utilize [Travis CI](https://pub.dartlang.org/packages/polymer_ajax_backed_model_behavior).
+Note that tests are specifically blocked from running on Firefox currently in order to utilize [Travis CI](https://travis-ci.org/ilikerobots/ajax-backed-model-behavior).
 
 
 
